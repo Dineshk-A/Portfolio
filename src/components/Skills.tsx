@@ -5,22 +5,22 @@ const skills = [
   {
     category: "Infrastructure",
     icon: Server,
-    items: ["Kubernetes", "Docker", "Terraform", "AWS/GCP", "Linux/Unix"]
+    items: ["Kubernetes", "Docker", "Terraform", "AWS", "Linux/Unix"]
   },
   {
     category: "Monitoring",
     icon: LineChart,
-    items: ["Prometheus", "Grafana", "ELK Stack", "Datadog", "AlertManager"]
+    items: ["Splunk", "Grafana", "Datadog", "incident.io", "pagerduty"]
   },
   {
     category: "DevOps",
     icon: GitBranch,
-    items: ["CI/CD", "Jenkins", "GitLab", "ArgoCD", "GitHub Actions"]
+    items: ["CI/CD", "Jenkins", "GitHub Actions"]
   },
   {
     category: "Scripting",
     icon: Terminal,
-    items: ["Python", "Bash", "Go", "JavaScript", "Infrastructure as Code"]
+    items: ["Python", "Bash", "Powershell", "Infrastructure as Code"]
   }
 ];
 
