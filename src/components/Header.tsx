@@ -8,7 +8,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-indigo-600" />
-            <span className="font-bold text-xl">SRE Portfolio</span>
+            <span className="font-bold text-xl">Dinesh Kumar A</span>
           </div>
           <div className="flex items-center space-x-6">
             <a href="#about" className="hover:text-indigo-600 transition-colors">About</a>
@@ -16,7 +16,7 @@ export function Header() {
             <a href="#skills" className="hover:text-indigo-600 transition-colors">Skills</a>
             <a href="#projects" className="hover:text-indigo-600 transition-colors">Projects</a>
             <div className="flex items-center space-x-4 ml-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
+              <a href="https://github.com/Dineshk-A" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
