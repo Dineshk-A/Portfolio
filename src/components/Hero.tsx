@@ -9,17 +9,18 @@ export function Hero() {
           <div className="relative mb-8">
             <img
               src="https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&q=80&w=200&h=200"
-              alt="Profile"
+              alt="Dinesh Kumar A"
               className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
             />
             <div className="absolute -bottom-2 -right-2 bg-indigo-600 rounded-full p-2">
               <Terminal className="h-5 w-5 text-white" />
             </div>
           </div>
-          <h1 className="text-4xl font-bold mb-4">Site Reliability Engineer</h1>
+          <h1 className="text-4xl font-bold mb-2">Dinesh Kumar A</h1>
+          <h2 className="text-2xl text-indigo-600 mb-4">Site Reliability Engineer</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-            Passionate about building and maintaining scalable, reliable, and efficient infrastructure.
-            Specializing in automation, monitoring, and incident response.
+            Experienced SRE with 3 years of expertise in building and maintaining scalable, reliable, 
+            and efficient infrastructure. Passionate about automation, monitoring, and incident response.
           </p>
           <div className="flex items-center space-x-6 mb-12">
             <div className="flex items-center space-x-2">
