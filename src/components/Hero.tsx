@@ -17,7 +17,7 @@ export function Hero() {
             </div>
           </div>
           <h1 className="text-4xl font-bold mb-2">Dinesh Kumar A</h1>
-          <h2 className="text-2xl text-indigo-600 mb-4">Site Reliability Engineer - 2</h2>
+          <h2 className="text-2xl text-indigo-600 mb-4">Site Reliability Engineer - II</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl">
             Experienced SRE with 3+ years of expertise in building and maintaining scalable, reliable, 
             and efficient infrastructure. Passionate about automation, monitoring, and incident response.
