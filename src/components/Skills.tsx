@@ -10,7 +10,12 @@ const skills = [
   {
     category: "Monitoring",
     icon: LineChart,
-    items: ["Splunk", "Grafana", "Datadog", "incident.io", "pagerduty"]
+    items: ["Splunk", "Grafana", "Datadog"]
+  },
+  {
+    category: "Incident Management",
+    icon: LineChart,
+    items: ["Incident.io", "Blameless", "pagerduty"]
   },
   {
     category: "DevOps",
