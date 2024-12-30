@@ -22,7 +22,7 @@ export function Header() {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:your.email@example.com" className="hover:text-indigo-600 transition-colors">
+              <a href="mailto:Dineshkumardk10.97@gmail.com" className="hover:text-indigo-600 transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
