@@ -1,5 +1,5 @@
 import React from 'react';
-import { Server, Cloud, GitBranch, Terminal, Database, LineChart } from 'lucide-react';
+import { Server, Cloud, GitBranch, Terminal, Database, LineChart , AlertCircle } from 'lucide-react';
 
 const skills = [
   {
@@ -14,13 +14,13 @@ const skills = [
   },
   {
     category: "Incident Management",
-    icon: LineChart,
+    icon: AlertCircle,
     items: ["Incident.io", "Blameless", "pagerduty"]
   },
   {
     category: "DevOps",
     icon: GitBranch,
-    items: ["CI/CD", "Jenkins", "GitHub Actions"]
+    items: ["CI/CD", "Jenkins", "GitHub Actions","Incident.io", "Blameless", "pagerduty"]
   },
   {
     category: "Scripting",
