@@ -1,32 +1,18 @@
-import React from 'react';
-import { Server, Cloud, GitBranch, Terminal, Database, LineChart , AlertCircle } from 'lucide-react';
+import React from "react";
 
 const skills = [
-  {
-    category: "Infrastructure",
-    icon: Server,
-    items: ["Kubernetes", "Docker", "Terraform", "AWS", "Linux/Unix"]
-  },
-  {
-    category: "Monitoring",
-    icon: LineChart,
-    items: ["Splunk", "Grafana", "Datadog"]
-  },
-  {
-    category: "Incident Management",
-    icon: AlertCircle,
-    items: ["Incident.io", "Blameless", "pagerduty"]
-  },
-  {
-    category: "DevOps",
-    icon: GitBranch,
-    items: ["CI/CD", "Jenkins", "GitHub Actions","Incident.io", "Blameless", "pagerduty"]
-  },
-  {
-    category: "Scripting",
-    icon: Terminal,
-    items: ["Python", "Bash", "Powershell", "Infrastructure as Code"]
-  }
+  { name: "Kubernetes", image: "/images/kubernetes.png" },
+  { name: "Docker", image: "/images/docker.png" },
+  { name: "Terraform", image: "/images/terraform.png" },
+  { name: "AWS", image: "/images/aws.png" },
+  { name: "Linux/Unix", image: "/images/linux.png" },
+  { name: "Splunk", image: "/images/splunk.png" },
+  { name: "Grafana", image: "/images/grafana.png" },
+  { name: "Datadog", image: "/images/datadog.png" },
+  { name: "Python", image: "/images/python.png" },
+  { name: "Bash", image: "/images/bash.png" },
+  { name: "PowerShell", image: "/images/powershell.png" },
+  { name: "Jenkins", image: "/images/jenkins.png" },
 ];
 
 export function Skills() {
@@ -34,21 +20,18 @@ export function Skills() {
     <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex overflow-x-auto space-x-6 scrollbar-hide">
           {skills.map((skill) => (
-            <div key={skill.category} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center space-x-3 mb-4">
-                <skill.icon className="h-6 w-6 text-indigo-600" />
-                <h3 className="font-semibold text-lg">{skill.category}</h3>
-              </div>
-              <ul className="space-y-2">
-                {skill.items.map((item) => (
-                  <li key={item} className="flex items-center space-x-2">
-                    <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+            <div
+              key={skill.name}
+              className="flex flex-col items-center justify-center w-32 shrink-0"
+            >
+              <img
+                src={skill.image}
+                alt={skill.name}
+                className="h-16 w-16 object-contain mb-2"
+              />
+              <p className="text-sm font-medium text-gray-600">{skill.name}</p>
             </div>
           ))}
         </div>
