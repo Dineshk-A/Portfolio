@@ -5,6 +5,11 @@ export default defineConfig({
   plugins: [react()],
   base: '/portfolio/', // Replace 'portfolio' with your repository name
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react', 'react-custom-scrollbars'],
+  },
+  build: {
+    rollupOptions: {
+      external: ['react-custom-scrollbars'],
+    },
   },
 });
