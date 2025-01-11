@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 const skills = [
   { name: "Kubernetes", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/Kubernetes.png" },
-  { name: "Docker", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/docker.jpg" },
+  { name: "Docker", image: "/https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/docker.jpg" },
   { name: "Terraform", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/terraform.png" },
   { name: "AWS", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/aws.png" },
   { name: "Linux/Unix", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/windows.png" },
@@ -11,6 +11,12 @@ const skills = [
   { name: "Grafana", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/grafana.png" },
   { name: "Datadog", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/Datadog_Logo.jpg" },
   { name: "Python", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/python.jpg" },
+  { name: "Bash", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/bash.png" },
+  { name: "PowerShell", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/powershell.png" },
+  { name: "Git", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/git.jpg" },
+  { name: "Jenkins", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/jenkins.png" },
+  { name: "Incident.IO", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/incidentio.png"},
+  { name: "Blameless", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png"}
 ];
 
 export function Skills() {
