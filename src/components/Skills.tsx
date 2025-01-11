@@ -33,10 +33,10 @@ export function Skills() {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
 
-        <div className="relative">
-          <div className="flex space-x-6 overflow-hidden">
-            {skills.slice(currentIndex, currentIndex + 4).map((skill, index) => (
-              <div key={index} className="flex flex-col items-center justify-center w-32 shrink-0">
+        <div className="relative overflow-hidden">
+          <div className="flex transition-all duration-300 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            {skills.map((skill, index) => (
+              <div key={index} className="flex flex-col items-center justify-center w-1/4 p-2">
                 <img
                   src={skill.image}
                   alt={skill.name}
@@ -49,16 +49,18 @@ export function Skills() {
 
           {/* Left Arrow */}
           <button
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-10"
             onClick={prev}
+            disabled={currentIndex === 0}
           >
             &#8249;
           </button>
 
           {/* Right Arrow */}
           <button
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-10"
             onClick={next}
+            disabled={currentIndex >= skills.length - 4}
           >
             &#8250;
           </button>

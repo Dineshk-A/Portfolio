@@ -10,4 +10,17 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  /* Optional: Adding smooth transitions */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  #skills {
+    position: relative;
+  }
+  
+  #skills .container {
+    padding: 0;
+  }
   
