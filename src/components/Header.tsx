@@ -14,6 +14,7 @@ export function Header() {
             <a href="#about" className="hover:text-indigo-600 transition-colors">About</a>
             <a href="#experience" className="hover:text-indigo-600 transition-colors">Experience</a>
             <a href="#skills" className="hover:text-indigo-600 transition-colors">Skills</a>
+            <a href="#certificates" className="hover:text-indigo-600 transition-colors">Certificates</a>
             <a href="#projects" className="hover:text-indigo-600 transition-colors">Projects</a>
             <div className="flex items-center space-x-4 ml-6">
               <a href="https://github.com/Dineshk-A" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
