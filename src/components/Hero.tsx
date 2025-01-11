@@ -6,7 +6,7 @@ export function Hero() {
     <section className="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white relative">
       {/* Background Image (Doodle) */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
+        className="absolute inset-0 bg-cover bg-center opacity-45"
         style={{
           backgroundImage: 'url(https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/sre_tools.webp)', 
         }}
@@ -27,8 +27,8 @@ export function Hero() {
             </div>
           </div>
           <h1 className="text-4xl font-bold mb-2">Dinesh Kumar A</h1>
-          <h2 className="text-2xl text-indigo-600 mb-4">Site Reliability Engineer - 2</h2>
-          <p className="text-xl text-gray-800 mb-8 max-w-2xl">
+          <h2 className="text-2xl text-indigo-750 mb-4">Site Reliability Engineer - 2</h2>
+          <p className="text-xl text-gray-900 mb-8 max-w-2xl">
             Experienced SRE with 3+ years of expertise in building and maintaining scalable, reliable, 
             and efficient infrastructure. Passionate about automation, monitoring, and incident response.
           </p>
