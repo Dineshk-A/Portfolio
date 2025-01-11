@@ -5,6 +5,24 @@ const certificates = [
     organization: "Amazon Web Services",
     date: "January 2023",
     certificateUrl: "https://example.com/aws-cert",
+  },
+  {
+    title: "Microsoft Certified: Azure Fundamentals",
+    organization: "Microsoft",
+    date: "June 2023",
+    certificateUrl: "https://www.credly.com/badges/2f06212f-bb8c-4017-b9e5-1a8286b0e84b/public_url",
+  },
+  {
+    title: "Microsoft Certified: Azure Developer Associate",
+    organization: "Microsoft",
+    date: "June 2023",
+    certificateUrl: "https://www.credly.com/badges/fed72620-7fd2-4798-9171-c721b25a8fe1/public_url",
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    organization: "Amazon Web Services",
+    date: "Oct 2022",
+    certificateUrl: "https://www.credly.com/badges/fbf3a24a-0851-41dc-a1aa-0c06aa8d3ece/public_url",
   }
 ];
 export function Certificates() {
