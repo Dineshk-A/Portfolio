@@ -19,7 +19,7 @@ export function Header() {
               <a href="https://github.com/Dineshk-A" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
+              <a href="https://www.linkedin.com/in/dinesh-kumar-a-8211121a1/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="mailto:Dineshkumardk10.97@gmail.com" className="hover:text-indigo-600 transition-colors">
