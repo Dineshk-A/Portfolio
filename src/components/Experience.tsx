@@ -23,19 +23,7 @@ const experiences = [
     company: "Amazon",
     role: "Transaction Risk Investigator",
     duration: "April 2021 - Dec 2021",
-    description: "Managed CI/CD pipelines, containerized applications, and optimized infrastructure for scalability and performance.",
-    projects: [
-      {
-        title: "CI/CD Pipeline Optimization",
-        description: "Improved CI/CD pipelines with Jenkins and Docker, reducing build times by 40%.",
-        technologies: ["Jenkins", "Docker", "Kubernetes"]
-      },
-      {
-        title: "Containerized Applications",
-        description: "Led the containerization of legacy applications using Docker, making them ready for Kubernetes deployment.",
-        technologies: ["Docker", "Kubernetes"]
-      }
-    ]
+    description: "Transaction Risk Management Systems (TRMS) is the Amazon organization that is dedicated to preserving customer trust. reduce fraudulent and suspicious activity in customer account",
   }
 ];
 
