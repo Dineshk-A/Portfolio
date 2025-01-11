@@ -13,6 +13,7 @@ const skills = [
   { name: "Bash", image: "/images/bash.png" },
   { name: "PowerShell", image: "/images/powershell.png" },
   { name: "Jenkins", image: "/images/jenkins.png" },
+  { name: "Blameless", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png"}
 ];
 
 export function Skills() {
