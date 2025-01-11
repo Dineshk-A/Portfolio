@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/portfolio/', // Change this if necessary
   optimizeDeps: {
-    include: [lucide-react','react-custom-scrollbars'], // Make sure this is included if you're using the library
+    include: ['lucide-react','react-custom-scrollbars'], // Make sure this is included if you're using the library
   },
 });
