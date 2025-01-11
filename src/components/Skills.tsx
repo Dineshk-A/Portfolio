@@ -16,7 +16,8 @@ const skills = [
   { name: "Git", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/git.jpg" },
   { name: "Jenkins", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/jenkins.png" },
   { name: "Incident.IO", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/incidentio.png"},
-  { name: "Blameless", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png"}
+  { name: "Blameless", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png"},
+  { name: "PagerDuty", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/pagerduty.png"}
 ];
 
 export function Skills() {

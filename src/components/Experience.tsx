@@ -14,8 +14,8 @@ const experiences = [
       },
       {
         title: "Incident Response Automation",
-        description: "Built an automated incident management pipeline using Splunk and PagerDuty, improving incident response times by 30%.",
-        technologies: ["Splunk", "PagerDuty", "Python"]
+        description: "Built an automated incident management pipeline using Splunk and PagerDuty, improving incident response times by 60%.",
+        technologies: ["Datadog", "PagerDuty", "Incident.io"]
       }
     ]
   },
