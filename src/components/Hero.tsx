@@ -3,9 +3,19 @@ import { Terminal, Cloud, Database, GitBranch } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-6">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white relative">
+      {/* Background Image (Doodle) */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{
+          backgroundImage: 'url(https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/sre_tools.webp)', 
+        }}
+      ></div>
+      
+      {/* Content Section */}
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center">
+          {/* Profile Image and Info */}
           <div className="relative mb-8">
             <img
               src="https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/images/profile.jpg?auto=format&fit=crop&q=80&w=200&h=200"
@@ -22,6 +32,8 @@ export function Hero() {
             Experienced SRE with 3+ years of expertise in building and maintaining scalable, reliable, 
             and efficient infrastructure. Passionate about automation, monitoring, and incident response.
           </p>
+
+          {/* Skills Section */}
           <div className="flex items-center space-x-6 mb-12">
             <div className="flex items-center space-x-2">
               <Cloud className="h-5 w-5 text-indigo-600" />
@@ -36,6 +48,8 @@ export function Hero() {
               <span>DevOps</span>
             </div>
           </div>
+
+          {/* Call to Action */}
           <div className="flex space-x-4">
             <a
               href="#contact"
