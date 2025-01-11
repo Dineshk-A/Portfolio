@@ -8,7 +8,7 @@ export function Hero() {
         <div className="flex flex-col items-center text-center">
           <div className="relative mb-8">
             <img
-              src="https://unsplash.com/photos/A3-my7D1lHk"
+              src="https://demo-source.imgix.net/bucket_hat.jpg?auto=format&fit=crop&q=80&w=200&h=200"
               alt="Dinesh Kumar A"
               className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
             />
