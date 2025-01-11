@@ -1,8 +1,9 @@
 import React from "react";
 
+// Skills array with name and image URLs
 const skills = [
   { name: "Kubernetes", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/Kubernetes.png" },
-  { name: "Docker", image: "/https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/docker.jpg" },
+  { name: "Docker", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/docker.jpg" }, // Fixed URL
   { name: "Terraform", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/terraform.png" },
   { name: "AWS", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/aws.png" },
   { name: "Linux/Unix", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/windows.png" },
@@ -16,7 +17,7 @@ const skills = [
   { name: "Git", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/git.jpg" },
   { name: "Jenkins", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/jenkins.png" },
   { name: "Incident.IO", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png"},
-  { name: "Blameless", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png"}
+  { name: "Blameless", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/blameless.png" }
 ];
 
 export function Skills() {
