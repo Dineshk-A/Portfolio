@@ -3,13 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/', // Replace 'portfolio' with your repository name
+  base: '/portfolio/', // Change this if necessary
   optimizeDeps: {
-    exclude: ['lucide-react', 'react-custom-scrollbars'],
-  },
-  build: {
-    rollupOptions: {
-      external: ['react-custom-scrollbars'],
-    },
+    include: [lucide-react','react-custom-scrollbars'], // Make sure this is included if you're using the library
   },
 });
