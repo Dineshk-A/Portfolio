@@ -25,21 +25,21 @@ export function Skills() {
     <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
-        {/* Wrap the skills container with Scrollbars */}
-        <Scrollbars style={{ width: "100%", height: "auto" }} autoHide>
-          <div className="flex space-x-6">
-            {skills.map((skill) => (
-              <div key={skill.name} className="flex flex-col items-center justify-center w-32 shrink-0">
-                <img
-                  src={skill.image}
-                  alt={skill.name}
-                  className="h-16 w-16 object-contain mb-2"
-                />
-                <p className="text-sm font-medium text-gray-600">{skill.name}</p>
-              </div>
-            ))}
-          </div>
-        </Scrollbars>
+        <div className="flex overflow-x-auto space-x-6 scrollbar-hide">
+          {skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="flex flex-col items-center justify-center w-32 shrink-0"
+            >
+              <img
+                src={skill.image}
+                alt={skill.name}
+                className="h-16 w-16 object-contain mb-2"
+              />
+              <p className="text-sm font-medium text-gray-600">{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
