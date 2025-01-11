@@ -14,14 +14,14 @@ export function Contact() {
           </p>
           <div className="flex justify-center space-x-6">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:dineshkumardk10.97@gmail.com"
               className="flex items-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <Mail className="h-5 w-5 text-indigo-600" />
               <span>Email Me</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dinesh-kumar-a-8211121a1/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow"
@@ -30,7 +30,7 @@ export function Contact() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Dineshk-A"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow"
