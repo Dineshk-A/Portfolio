@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const skills = [
   { name: "Kubernetes", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/Kubernetes.png" },
@@ -20,33 +20,50 @@ const skills = [
 ];
 
 export function Skills() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const imagesPerPage = 4; // Number of images visible per page
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
-  const next = () => {
-    if (currentIndex < skills.length - imagesPerPage) {
-      setCurrentIndex(currentIndex + 1);
+  // Scroll the container to the left
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -200,
+        behavior: 'smooth',
+      });
     }
   };
 
-  const prev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+  // Scroll the container to the right
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 200,
+        behavior: 'smooth',
+      });
     }
   };
-
-  // Slice the skills array to show only the images that should be visible
-  const visibleSkills = skills.slice(currentIndex, currentIndex + imagesPerPage);
 
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+        <div className="relative">
+          {/* Left Arrow */}
+          <button
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-10"
+            onClick={scrollLeft}
+          >
+            &#8249;
+          </button>
 
-        <div className="relative overflow-hidden">
-          <div className="flex transition-all duration-300 ease-in-out">
-            {visibleSkills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center justify-center w-1/4 p-2">
+          <div
+            ref={scrollContainerRef}
+            className="flex overflow-x-auto space-x-6 scrollbar-hide"
+          >
+            {skills.map((skill) => (
+              <div
+                key={skill.name}
+                className="flex flex-col items-center justify-center w-32 shrink-0"
+              >
                 <img
                   src={skill.image}
                   alt={skill.name}
@@ -57,20 +74,10 @@ export function Skills() {
             ))}
           </div>
 
-          {/* Left Arrow */}
-          <button
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-10"
-            onClick={prev}
-            disabled={currentIndex === 0}
-          >
-            &#8249;
-          </button>
-
           {/* Right Arrow */}
           <button
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-10"
-            onClick={next}
-            disabled={currentIndex >= skills.length - imagesPerPage}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-10"
+            onClick={scrollRight}
           >
             &#8250;
           </button>
