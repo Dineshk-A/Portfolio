@@ -8,7 +8,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-45"
         style={{
-          backgroundImage: 'url(https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/sre_tools.webp)', 
+          backgroundImage: 'url(https://dineshportofolio.s3.us-east-1.amazonaws.com/sre_tools.webp)', 
         }}
       ></div>
       
@@ -18,7 +18,7 @@ export function Hero() {
           {/* Profile Image and Info */}
           <div className="relative mb-8">
             <img
-              src="https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/images/profile.jpg?auto=format&fit=crop&q=80&w=200&h=200"
+              src="https://dineshportofolio.s3.us-east-1.amazonaws.com/profile.jpg?auto=format&fit=crop&q=80&w=200&h=200"
               alt="Dinesh Kumar A"
               className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
             />
