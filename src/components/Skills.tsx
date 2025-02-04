@@ -4,7 +4,7 @@ const skills = [
   { name: "Kubernetes", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/Kubernetes.png" },
   { name: "Docker", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/docker.jpg" },
   { name: "Terraform", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/terraform.png" },
-  { name: "AWS", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/aws.png" },
+  { name: "AWS", image: "https://dineshportofolio.s3.us-east-1.amazonaws.com/aws.png" },
   { name: "Linux/Unix", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/windows.png" },
   { name: "Windows", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/linux.jpg" },
   { name: "Splunk", image: "https://images-for-protfolio.s3.ap-southeast-2.amazonaws.com/splunk.jpg" },
